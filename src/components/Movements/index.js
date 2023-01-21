@@ -8,14 +8,14 @@ import {
 
 export default function Movements({ data }) {
   return (
-    <TouchableOpacity styles={styles.container}>
+    <TouchableOpacity style={styles.container}>
       <Text style={styles.date}>{data.date}</Text>
 
-      <View styles={styles.content}>
+      <View style={styles.content}>
         <Text style={styles.label}>{data.label}</Text>
 
         <Text style={styles.value}>
-          {data.value}
+          R$ {data.value}
         </Text>
       </View>
     </TouchableOpacity>
@@ -24,6 +24,15 @@ export default function Movements({ data }) {
 
 const styles = StyleSheet.create({
   container: {
-
+    flex: 1,
+    marginBottom: 24,
+    borderBottomWidth: 0.5,
+    borderBottomColor: '#DADADA'
+  },
+  content: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 2,
+    marginBottom: 8
   }
 })

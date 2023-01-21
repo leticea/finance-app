@@ -2,7 +2,7 @@ import React from "react";
 import {
   View,
   Text,
-  StyleSheet,
+  StyleSheet
 } from "react-native";
 
 export default function Balance({ saldo, gastos }) {
@@ -61,4 +61,4 @@ const styles = StyleSheet.create({
     fontSize: 22,
     color: '#e74c3c'
   }
-});
+})
