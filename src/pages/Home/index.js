@@ -16,14 +16,14 @@ const list = [
     label: 'Pix cliente X',
     value: '2.500,00',
     date: '20/09/2022',
-    type: 0 //receita / entradas
+    type: 1 //receita / entradas
   },
   {
     id: 3,
     label: 'Salário',
     value: '7.500,00',
     date: '22/09/2022',
-    type: 0 //receita / entradas
+    type: 1 //receita / entradas
   },
 ]
 
