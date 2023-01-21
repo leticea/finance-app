@@ -11,12 +11,11 @@ import { Feather } from "@expo/vector-icons";
 
 const statusBarHeight = StatusBar.currentHeight ? StatusBar.currentHeight + 22 : 64; //espaçamento do android e ios(64)
 
-export default function Header() {
+export default function Header({ name }) {
   return (
     <View style={styles.container}>
       <View style={styles.content}>
-        <Text style={styles.username}>Letícia Mangueira</Text>
-
+        <Text style={styles.username}>{name}</Text>
         <TouchableOpacity activeOpacity={0.8} style={styles.buttonUser}>
           <Feather name="user" size={27} color="#FFF" />
         </TouchableOpacity>
