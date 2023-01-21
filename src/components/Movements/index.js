@@ -10,7 +10,7 @@ export default function Movements({ data }) {
   const [showValue, setShowValue] = useState(false);
 
   return (
-    <TouchableOpacity style={styles.container}>
+    <TouchableOpacity style={styles.container} onPress={() => setShowValue(!showValue)}>
       <Text style={styles.date}>{data.date}</Text>
 
       <View style={styles.content}>
