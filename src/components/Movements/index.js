@@ -22,11 +22,8 @@ export default function Movements({ data }) {
           </Text>
         ) : (
           <View style={styles.skeleton}>
-
           </View>
         )}
-
-
       </View>
     </TouchableOpacity>
   );
