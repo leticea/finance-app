@@ -18,6 +18,35 @@ export default function Actions() {
         </View>
         <Text style={styles.labelButton}>Entradas</Text>
       </TouchableOpacity>
+
+      <TouchableOpacity style={styles.actionButton}>
+        <View style={styles.areaButton}>
+          <AntDesign name="tagso" size={26} color="#000" />
+        </View>
+        <Text style={styles.labelButton}>Compras</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.actionButton}>
+        <View style={styles.areaButton}>
+          <AntDesign name="creditcard" size={26} color="#000" />
+        </View>
+        <Text style={styles.labelButton}>Carteira</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.actionButton}>
+        <View style={styles.areaButton}>
+          <AntDesign name="barcode" size={26} color="#000" />
+        </View>
+        <Text style={styles.labelButton}>Boletos</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.actionButton}>
+        <View style={styles.areaButton}>
+          <AntDesign name="setting" size={26} color="#000" />
+        </View>
+        <Text style={styles.labelButton}>Conta</Text>
+      </TouchableOpacity>
+
     </ScrollView>
   );
 }
@@ -31,6 +60,20 @@ const styles = StyleSheet.create({
     paddingStart: 14
   },
   actionButton: {
+    alignItems: 'center',
+    marginRight: 32
+  },
+  areaButton: {
+    backgroundColor: '#ecf0f1',
+    height: 60,
+    width: 60,
+    borderRadius: 30,
+    justifyContent: 'center',
     alignItems: 'center'
+  },
+  labelButton: {
+    marginTop: 4,
+    textAlign: 'center',
+    fontWeight: 'bold'
   }
 })
