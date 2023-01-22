@@ -46,7 +46,7 @@ export default function Home() {
       />
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {

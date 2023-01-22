@@ -27,7 +27,7 @@ export default function Movements({ data }) {
       </View>
     </TouchableOpacity>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -67,4 +67,4 @@ const styles = StyleSheet.create({
     backgroundColor: '#DADADA',
     borderRadius: 8
   }
-})
+});
