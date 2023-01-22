@@ -2,6 +2,7 @@ import React from "react";
 import {
   View,
   StyleSheet,
+  Text,
   StatusBar,
   TouchableOpacity
 } from "react-native";
@@ -9,7 +10,10 @@ import {
 import { Feather } from "@expo/vector-icons";
 import { MotiView, MotiText } from "moti";
 
-const statusBarHeight = StatusBar.currentHeight ? StatusBar.currentHeight + 22 : 64; //espaçamento do android e ios(64)
+const statusBarHeight =
+  StatusBar.currentHeight
+  ? StatusBar.currentHeight + 22
+  : 64; //espaçamento do android e ios(64)
 
 export default function Header({ name }) {
   return (
@@ -28,21 +32,21 @@ export default function Header({ name }) {
         transition={{
           type: "timing",
           duration: 800,
-          delay: 300,
+          delay: 300
         }}
       >
         <MotiText
           style={styles.username}
           from={{
-            translateX: -300,
+            translateX: -300
           }}
           animate={{
-            translateX: 0,
+            translateX: 0
           }}
           transition={{
             type: "timing",
             duration: 800,
-            delay: 800,
+            delay: 800
           }}
         >
           {name}
