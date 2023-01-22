@@ -2,7 +2,6 @@ import React from "react";
 import {
   View,
   StyleSheet,
-  Text,
   StatusBar,
   TouchableOpacity
 } from "react-native";
@@ -18,7 +17,6 @@ const statusBarHeight =
 export default function Header({ name }) {
   return (
     <View style={styles.container}>
-
       <MotiView
         style={styles.content}
         from={{
@@ -51,12 +49,10 @@ export default function Header({ name }) {
         >
           {name}
         </MotiText>
-
         <TouchableOpacity activeOpacity={0.8} style={styles.buttonUser}>
           <Feather name="user" size={27} color="#FFF" />
         </TouchableOpacity>
       </MotiView>
-
     </View>
   )
 };

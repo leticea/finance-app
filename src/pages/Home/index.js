@@ -8,22 +8,22 @@ const list = [
   {
     id: 1,
     label: 'Boleto conta luz',
-    value: '300,90',
-    date: '17/09/2022',
+    value: '255,00',
+    date: '22/09/2022',
     type: 0 //despesas
   },
   {
     id: 2,
     label: 'Pix cliente X',
     value: '2.500,00',
-    date: '20/09/2022',
+    date: '21/09/2022',
     type: 1 //receita / entradas
   },
   {
     id: 3,
     label: 'Salário',
     value: '7.500,00',
-    date: '22/09/2022',
+    date: '19/09/2022',
     type: 1 //receita / entradas
   },
 ]
@@ -33,16 +33,14 @@ export default function Home() {
     <View style={styles.container}>
       <Header name="Maria" />
       <Balance saldo="9.250.90" gastos="-527.00" />
-
       <Actions />
-
       <Text style={styles.title}>Últimas movimentações</Text>
       <FlatList
         style={styles.list}
         data={list}
         keyExtractor={(item) => String(item.id)}
         showsVerticalScrollIndicator={false}
-        renderItem={({ item }) => <Movements data={item}/>}
+        renderItem={({ item }) => <Movements data={item} />}
       />
     </View>
   );
