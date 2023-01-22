@@ -10,31 +10,32 @@
 <p align="center">
   <img alt="movies" src=".github/image1.png">
 </p>
-<p align="center">
-  <img alt="movie" src=".github/image2.png">
-</p>
 
-## Movie Library
+## Finance Application Interface
 
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
-- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-- [ReactJS](https://reactjs.org/)
+- [React Native](https://reactnative.dev/)
+- [Node.js](https://nodejs.org/en/) - v18.12.1
+- [Npm](https://www.npmjs.com/) - 8.19.2
+- [Expo](https://expo.dev/)
 
 ## 💻 Projeto
 
-Projeto de uma biblioteca de filmes com react e API do TMDB.
+Projeto de uma interface de um app de finanças.
 
-Aula do canal [Matheus Battisti](https://www.youtube.com/watch?v=XqxUHVVO7-U&t=244s)
+Aula do canal [Sujeito Programador](https://www.youtube.com/watch?v=REulDg3JzzQ&t=134s)
 
 ## 🚀 Como Rodar
 
 - Clone o projeto;
-- Rode npm install react-icons react-router-dom (para ícones e pacote de rotas);
-- npm run dev (para rodar o projeto na porta indicada);
+- Rode npm install expo-cli --global (use yarn add se for de acordo com a sua configuração);
+- expo start;
+- pressione 'a' para abrir no Android;
+
+Obs: caso dê erro no projeto após instalar o Moti, é só rodar npm i --legacy-peer-deps e rodar novamente o app.
 
 ## 🤔 Como contribuir
 
