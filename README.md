@@ -8,7 +8,7 @@
 <br>
 
 <p align="center">
-  <img alt="finance-app" src=".github/image.png">
+  <img alt="" src=".github/image.png">
 </p>
 
 ## Finance Application Interface
